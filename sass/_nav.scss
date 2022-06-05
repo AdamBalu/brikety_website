@@ -1,0 +1,31 @@
+@import 'variables';
+
+.nav-main {
+	position: relative;
+	margin: 0 auto;
+	background: $primary-color;
+	text-align: center;
+}
+
+.nav-elem {
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.nav-elem:last-child {
+	padding-right: 0;
+}
+
+.nav-elem a:hover,
+.nav-elem a:target {
+	color: #5b2d0d;
+}
+
+.nav-elem a {
+	color: $secondary-color;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: 500;
+	font-size: 1.15em;
+	text-transform: uppercase;
+}

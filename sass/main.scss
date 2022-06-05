@@ -1,0 +1,148 @@
+@import 'variables',
+		'main_elements',
+		'mixins',
+		'media_queries',
+		'carousel',
+		'nav';
+
+.group:before,
+.group:after { content: " "; display: table; }
+
+.group:after { clear: both; }
+
+
+.pullquote {
+	margin-top: 4em;
+	padding: 1em;
+	outline: 1px solid $primary-color-light;
+}
+
+.is-hidden { display: none; }
+
+.centered {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.flex-gal {
+	margin: 8em 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product-box {
+	width: 23em;
+	height: 20em;
+	margin: 1em;
+	border-bottom-right-radius: 2%;
+	border-bottom-left-radius: 2%;
+	display: block;
+	font-size: 1.1em;
+
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0.05375em 0.05375em rgba(61, 30, 9, .5);
+
+	background: $background-color;
+	color: $secondary-color;
+	transition: transform 1s;
+	border: .005em solid $primary-color;
+}
+
+.product-box:hover,
+.product-box:target {
+	color: $primary-color;
+	box-shadow: 0px 0 25px 15px $primary-color-light;
+	transform: translate3d(0, -1em, 0);
+	text-shadow: .125em .125em $primary-color-light;
+}
+
+.product-img {
+	overflow: hidden;
+}
+
+#main-article {
+	max-width: 1400px;
+	font-size: 1.3em;
+}
+
+.subsite-main-pic {
+	position: relative;
+	max-width: 50%;
+	box-shadow: 0px 0 10px 3px $primary-color-light;
+}
+
+.subsite-main-pic:hover {
+	box-shadow: 0px 0 17px 5px $primary-color-light;
+}
+
+.list-icon {
+	color: $primary-color;
+}
+
+.article-ul li {
+	vertical-align: center;
+	line-height: 1.5em;
+}
+
+.article-ul i {
+	padding-right: 0.5em;
+}
+
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+form > button,
+textarea {
+	background: $background-color;
+	border: none;
+	width: 300px;
+	padding: 15px 20px;
+	margin: 15px;
+	border-radius: 4px;
+	box-shadow: 0 0 3px $box-shadow-color;
+}
+
+.message-area {
+	width: 96.8%;
+}
+
+input:focus,
+textarea:focus {
+	outline: 2px solid $focus-area-color;
+}
+
+form {
+	padding-top: 4em;
+	border-top: 1px solid rgba(61, 30, 9, 0.1);
+}
+
+form > button {
+	background: $primary-color;
+	text-transform: uppercase;
+	color: $secondary-color;
+	width: 10em;
+
+}
+
+.delete-button:hover,
+.send-button:hover {
+	cursor: pointer;
+	font-weight: bold;
+	border: 1px solid #000;
+}
+
+.delete-button:hover {
+	background: $btn-delete-color;
+}
+
+.send-button:hover {
+	background: $btn-send-color;
+}
+
+.contact-heading {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 4em;
+	color: $contact-heading-color;
+}
